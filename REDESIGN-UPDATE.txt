@@ -1,0 +1,20 @@
+EGOIST ARCHIVE — POWERFUL × UNIQUE redesign
+
+This update replaces the public-facing design while preserving the Node.js server, SQLite database, login, and content API.
+
+Install over your existing project:
+1. Stop the running server with Ctrl+C.
+2. Make a backup copy of your current egoist-archive folder (especially .env and data/).
+3. Extract this ZIP somewhere temporary.
+4. Copy the contents of the included egoist-archive/public/ folder into your existing project's public/ folder, replacing files when asked.
+5. Do NOT replace or delete your existing .env, data/ folder, node_modules/, or server.js.
+6. Start again from the existing project folder with: npm.cmd start
+7. Open http://localhost:3000 and press Ctrl+F5 to bypass the browser cache.
+
+Included public assets:
+- index.html: full redesigned responsive site
+- app.js: existing admin/API integration, now uses local isagi.jpg as the default portrait
+- effects.js: scroll reveals, progress indicator, pointer glow, portrait tilt, and a small keyboard easter egg
+- isagi.jpg: the image supplied by the user in chat
+
+Note: the current backend/admin schema edits the hero, profile text, project cards, and social links. Sections such as the creator hub, gallery, and timeline are currently designed content areas; a future CMS expansion would be needed to add/edit every individual item in those sections from the admin panel. The site is local-only until deployed to hosting.
